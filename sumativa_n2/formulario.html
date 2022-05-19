@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APOYO RESILENTE: Formulario de contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">   <!-- nav -->
+                <nav class="navbar navbar-light" style="background-color: #ae5b71;"></nav>
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <a class="navbar-brand"  href="#">APOYO RESILENTE</a>
+                        <img id="circular" src="img/logo.png" width="80" height="80">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a id="a" class="nav-link active" aria-current="page" href="portada2.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="a" class="nav-link" href="#">Acerca de nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="a" class="nav-link" href="formulario.html">Formulario de contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="a" class="nav-link" href="#">Motivación</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a id="a" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Consejos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a id="a" class="dropdown-item" href="#">Estudiantiles</a></li>
+                            <li><a id="a" class="dropdown-item" href="#">Laborales</a></li>
+                            <li><a id="a" class="dropdown-item" href="#">Familiares</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a id="a" class="dropdown-item" href="#">Cuentanos que necesitas</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+                <hr>    
+                </nav>
+                </nav>
+                
+            </div>
+    <div class="container">
+        <h2>Formulario </h2>
+    <form action="recibe.php" method="post">
+       <div class="row g-3">
+           <div class="col-xs-12 col-sm-6">
+                <label for="">Nombres</label>
+                <input type="text" class="form-control" name="txt_nombre" id="txt_nombre" placeholder="Ingrese su o sus nombres" required/>
+                <label for="">Apellido Paterno</label>
+                <input type="text" class="form-control" name="txt_apellido_paterno" id="txt_apellido_paterno" placeholder="Ingrese su apellido paterno" required/>
+                <label for="">Apellido Materno</label>
+                <input type="text" class="form-control" name="txt_apellido_materno" id="txt_apellido_materno"placeholder="Ingrese su segundo apellido" required/>
+                <label for="">Genero</label> <br>
+                <input type="radio" class="form-check-input" name="rbt_genero" id="rbt_genero" value="F">
+                <label for="">Femenino</label>
+                <input type="radio" class="form-check-input" name="rbt_genero" id="rbt_genero" value="M">
+                <label for="">Masculino</label> <br>
+                <label for="customRange1" class="form-label">¿Como te sientes hoy?</label>
+                <input type="range" class="form-range" id="customRange1" >
+                <label for="">¿Como es tu estado de animo?</label>
+                <select class="form-select" name="" id="" required/>
+                    <option value="" ></option>
+                    <option value="">Calmado😮‍💨</option>
+                    <option value="">Enojado😠</option>
+                    <option value="">Triste😔</option>
+                    <option value="">Contento😀</option>
+                    <option value="">Desmotivado👎🏼</option>
+
+                </select>
+                <label for="">Cuentanos como te sientes</label>
+                <textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="Comentanos como te sientes, para ayudarte💚" required/></textarea>
+               </div>
+               <div class="col-xs-12">
+                   <input type="submit" class="btn btn-danger" value="Enviar">
+                   <input type="reset" class="btn btn-primary" value="Limpiar Formulario">
+               </div>
+       </div>
+   </form>
+   </div>
+
+   <hr>
+   <footer class="bg-dark text-white"> <!-- Pie de pagina -->
+       <div class="container">
+           <div class="row">
+               <div class="col-xs-12 col-sm-4 col-md-6 col-lg-3">
+                   <img src="img/logo.png" width="80" height="120"alt="">
+                   <h6>APOYO RESILENTE</h6>
+
+               </div>
+               <div class="col-xs-12 col-sm-4 col-md-6 col-lg-3">
+                   <h3 class="subtitulos">Datos de contacto</h3>
+                   <p>
+                       <h5>Telefonos:</h5> 
+                       +58 424 445587 <br>
+                        0251 2542710 
+                        
+                       <h5>Correo:</h5> 
+                       sac@teayudo.ve
+                       
+                   </p>
+               </div> 
+               <div class="col-xs-12 col-sm-4 col-md-6 col-lg-3">
+                   <h6>Video Motivacional😎</h6>
+                   <iframe width="250" height="200" src="https://www.youtube.com/embed/BN6I9s78fsY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>          
+               <div class="col-xs-12 col-sm-4 col-md-6 col-lg-3">
+                   <h6>Video Sobre la fluidez🍃</h6>
+                   <iframe width="250" height="200" src="https://www.youtube.com/embed/pBYLd8K6YFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+               </div>  
+           </div>      
+       </div>
+   <br>
+   <br>    
+   <br>                
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>
